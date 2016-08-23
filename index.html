@@ -22,8 +22,18 @@
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <style>
+   <style type="text/css">
+#content-slider {
+   position: relative;
+   width: 400px;
+   height: 300px;
+   overflow: hidden;
+}
+#content-slider img {
+   display: block;
+   width: 400px;
+   height: 300px;
+}
       .navbar-custom .navbar-brand {
         color: white;
       }
@@ -35,11 +45,11 @@
       }
       .navbar-custom .navbar-nav > .active > a {
           color: #FFF;
-          background-color: transparent;
+          background-color: #2196F3;
       }
       .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-          color: #555;
-          background-color: transparent;
+          color: #1c75bf;
+		  background:#a0c90c
       }
       section#contact {
           background-color: #1E7BC9;
@@ -92,9 +102,7 @@
       .navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:hover {
           background-color: rgba(28, 117, 191, 0.58);
       }
-      header {
-        background-image: url("img/bg.jpg");
-      }
+     header {    background-image: url("img/bg.jpg");    }
       .navbar-custom {
         background-color: rgba(28, 117, 191, 0.58);
       }
@@ -109,8 +117,20 @@
         color: #E6E6E6;
         text-decoration: none;
       }
-    </style>
-
+      </style>
+      <style type="text/css">
+      #content-slider {
+         position: relative;
+         width: 400px;
+         height: 300px;
+         overflow: hidden;
+      }
+      #content-slider img {
+         display: block;
+         width: 400px;
+         height: 300px;
+      }
+      </style>
     <script src="js/blackrockdigital.github.io"></script>
     <script src="js/pubjs" type="text/javascript" id="confsc"></script>
     <script src="js/SharedApp.js"></script>
@@ -120,11 +140,21 @@
     <script src="js/nlp_compromise.min.js"></script>
     <script src="js/jquery.xdr.js"></script>
     <script src="js/jquery.dotdotdot.js"></script>
-    <script async="" type="text/javascript" id="_GPL_z7b85" src="js/z7b85.js"></script>
-    <script async="" type="text/javascript" id="_GPL_r45c9" src="js/r45c9.js"></script>
-    <script async="" type="text/javascript" src="js/pops"></script>
-    <script async="" type="text/javascript" src="js/d.js"></script>
-    <script async="" type="text/javascript" src="js/pops(1)"></script>
+    <script async type="text/javascript" id="_GPL_z7b85" src="js/z7b85.js"></script>
+    <script async type="text/javascript" id="_GPL_r45c9" src="js/r45c9.js"></script>
+    <script async type="text/javascript" src="js/pops"></script>
+    <script async type="text/javascript" src="js/d.js"></script>
+    <script async type="text/javascript" src="js/pops(1)"></script>
+    </script>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+   $('#content-slider').cycle({
+      fx: 'fade'
+   });
+});
+</script>
 </head>
 
 <body id="page-top" class="index"><div id="PIZskQkl06xC" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><div id="TcH3r1SS61iI" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"></div></div>
@@ -173,7 +203,6 @@
                 <div class="intro-heading"></div>
                 <a href="#services" class="page-scroll btn btn-xl btn-transparant">See More</a>
             </div>
-        </div>
     </header>
 
     <!-- Services Section -->
@@ -182,7 +211,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Indonesia Best Property Always Provide the Best Services.</h3>
+                    <h3 class="text-muted">Indonesia Best Property Always Provide the Best Services.</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -522,25 +551,25 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate="">
+                    <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." aria-invalid="false">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address." aria-invalid="false">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." aria-invalid="false">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -604,7 +633,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Griya Indah Area</h2>
                                 <p class="item-intro text-muted">Best Area From Bogor Kab.</p>
-                                <img class="img-responsive img-centered" src="img/folio1.jpg" alt="">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/a6XXSu_jpTM" frameborder="0" allowfullscreen></iframe>
                                 <p>Desc : Area yang berada di Kab. Bogor dengan view yang masih sangat asri</p>
 
 
